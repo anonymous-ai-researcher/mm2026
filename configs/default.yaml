@@ -1,0 +1,28 @@
+# FairVAL default configuration
+# Override per-dataset in dataset-specific configs
+
+# Active learning
+budget_fraction: 0.10
+rounds: 10
+seed_fraction: 0.01
+
+# Backbone
+backbone: clip-vit-b16
+
+# Fairness
+gamma: 0.05
+beta: 10.0
+c: 1.0
+
+# Demographic estimator
+noise_rate: 0.0
+estimator_hidden: 128
+estimator_epochs: 50
+
+# Trainer
+train_lr: 0.01
+train_epochs: 100
+mu_lr: 0.1
+
+# Data
+data_root: data

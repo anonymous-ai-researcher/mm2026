@@ -1,0 +1,11 @@
+# eurocity configuration — inherits from default.yaml
+dataset: eurocity
+backbone: clip-vit-b16
+budget_fraction: 0.10
+rounds: 10
+gamma: 0.05
+beta: 10.0
+c: 1.0
+# k=2, detection task
+# Positive class: pedestrian present (image-level)
+# Groups: Child / Adult

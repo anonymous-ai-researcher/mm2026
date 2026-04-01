@@ -1,0 +1,11 @@
+# chexpert configuration — inherits from default.yaml
+dataset: chexpert
+backbone: clip-vit-b16
+budget_fraction: 0.10
+rounds: 10
+gamma: 0.05
+beta: 10.0
+c: 1.0
+# k=4, p+=0.38
+# Positive class: pleural effusion
+# Groups: Race (White, Black, Asian, Other)
